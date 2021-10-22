@@ -17,7 +17,7 @@ public class ContaPoupanca extends Conta {
         this.diaAniversarioConta = diaAniversarioConta;
     }
 
-    public void correcao (int dia){
+    public void corrigir (int dia){
         if (dia == diaAniversarioConta) {
             super.depositar(super.getSaldo()*0.005);
         }

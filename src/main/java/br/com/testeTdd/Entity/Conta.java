@@ -4,7 +4,7 @@ public abstract class  Conta {
 
     private int numero;
     private double saldo;
-    private boolean ativa;
+//    private boolean ativa;
 
     public Conta(int numero) {
         this.numero = numero;
