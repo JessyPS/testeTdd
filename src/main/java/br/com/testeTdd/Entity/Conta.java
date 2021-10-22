@@ -3,7 +3,7 @@ package br.com.testeTdd.Entity;
 public abstract class  Conta {
 
     private int numero;
-    private double saldo;
+    protected double saldo;
 //    private boolean ativa;
 
     public Conta(int numero) {
@@ -33,6 +33,6 @@ public abstract class  Conta {
     }
 
     public void sacar (double valor){
-        saldo += valor;
+        saldo -= valor;
     }
 }
