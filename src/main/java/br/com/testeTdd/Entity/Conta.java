@@ -27,12 +27,12 @@ public abstract class  Conta {
         this.saldo = saldo;
     }
 
-    //Metodos
+    //Métodos
     public void depositar (double valor){
-        saldo += valor;
-    }
-
-    public void sacar (double valor){
-        saldo -= valor;
+        if (valor <= saldo){
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo indisponível");
+        }
     }
 }
